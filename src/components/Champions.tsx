@@ -3,10 +3,14 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import Champion from "./Champion";
+import LoadingGif from "./LoadingGif";
 
 export default function Champions() {
+  localStorage.setItem("isLoading", "no");
+
   const [championData, setChampionData] = useState<any>({});
   const [championArr, setChampionArr] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     axios({
@@ -21,14 +25,18 @@ export default function Champions() {
       .then((res: any) => {
         setChampionData(res.data.data);
         setChampionArr(Object.keys(res.data.data));
+        setIsLoading(false);
         console.log(res.data.data);
       })
       .catch((err: any) => {
+        setIsLoading(false);
         console.log(err);
       });
   }, []);
 
-  return (
+  return isLoading ? (
+    <LoadingGif />
+  ) : (
     <ChampionWrapper>
       {championArr.map((el: string) => (
         <div key={el}>

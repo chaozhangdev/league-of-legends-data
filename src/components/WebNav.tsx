@@ -38,9 +38,8 @@ const NavWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 100px 40px;
+  padding: 10px;
   background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/9112b576009313.5c5ca8e8c45c3.jpg);
-  background-image: url(https://c.tenor.com/RQwnTZ5oOogAAAAd/kda-more.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
