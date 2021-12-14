@@ -22,7 +22,7 @@ export default function Champion(props: ChampionProps) {
       />
       <ChampionTagsWrapper>
         {props.data.tags.map((el: string) => (
-          <ChampionTag>{el}</ChampionTag>
+          <ChampionTag key={el}>{el}</ChampionTag>
         ))}
       </ChampionTagsWrapper>
     </ChampionWrapper>
@@ -31,14 +31,15 @@ export default function Champion(props: ChampionProps) {
 
 const ChampionWrapper = styled.div`
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #3f3e3ecf;
   width: 160px;
   height: 160px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   :hover {
+    transition: 0.3s;
     cursor: pointer;
     background-color: white;
     p {
@@ -55,6 +56,7 @@ const ChampionName = styled.p`
 const ChampionImage = styled.img`
   width: 100px;
   height: 100px;
+  margin: 5px 0px;
 `;
 
 const ChampionTagsWrapper = styled.div`
@@ -66,6 +68,9 @@ const ChampionTagsWrapper = styled.div`
 
 const ChampionTag = styled.p`
   font-size: 12px;
+  background-color: grey;
+  border-radius: 5px;
   color: white;
-  padding: 0px 5px;
+  margin: 0px 5px;
+  padding: 2px;
 `;
