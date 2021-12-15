@@ -4,45 +4,49 @@ import { Link } from "react-router-dom";
 
 export default function WebNav() {
   return (
-    <NavWrapper>
-      {/* <BgVideo id="background-video" autoPlay loop muted>
-        <source
-          src="https://www.leagueoflegends.com/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm"
-          type="video/mp4"
-        />
-      </BgVideo> */}
-      <Link to="/champions">
-        <Item>Champions</Item>
-      </Link>
-      <Link to="/items">
-        <Item>Items</Item>
-      </Link>
-      <Link to="/">
-        <LogoImg
-          src="https://cdn1.dotesports.com/wp-content/uploads/2018/08/12031808/599f9846-474d-4867-9164-559f2dd5f1ac.png"
-          alt="lol logo image"
-        />
-      </Link>
-      <Link to="/summoners">
-        <Item>Summoners</Item>
-      </Link>
-      <Link to="/factions">
-        <Item>Factions</Item>
-      </Link>
-    </NavWrapper>
+    <Wrapper>
+      <NavWrapper>
+        <Link to="/champions">
+          <Item>Champions</Item>
+        </Link>
+        <Link to="/items">
+          <Item>Items</Item>
+        </Link>
+        <Link to="/">
+          <LogoImg
+            src="https://cdn1.dotesports.com/wp-content/uploads/2018/08/12031808/599f9846-474d-4867-9164-559f2dd5f1ac.png"
+            alt="lol logo image"
+          />
+        </Link>
+        <Link to="/summoners">
+          <Item>Summoners</Item>
+        </Link>
+        <Link to="/factions">
+          <Item>Factions</Item>
+        </Link>
+      </NavWrapper>
+    </Wrapper>
   );
 }
 
+const Wrapper = styled.div`
+  position: fixed;
+  width: 100%;
+  top: 0px;
+`;
+
 const NavWrapper = styled.div`
+  height: 160px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/9112b576009313.5c5ca8e8c45c3.jpg);
+  background-color: black;
+  /* background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/9112b576009313.5c5ca8e8c45c3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 `;
 
 // const BgVideo = styled.video`
@@ -56,14 +60,14 @@ const NavWrapper = styled.div`
 // `;
 
 const LogoImg = styled.img`
-  width: 300px;
-  margin: 60px;
+  width: 200px;
+  margin: 20px 60px;
 `;
 
 const Item = styled.p`
-  font-size: 22px;
+  font-size: 18px;
   color: white;
-  margin: 60px;
+  margin: 0 60px;
   z-index: 2;
   :hover {
     cursor: pointer;

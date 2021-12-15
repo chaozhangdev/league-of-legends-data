@@ -67,9 +67,8 @@ const ChampionTagsWrapper = styled.div`
 `;
 
 const ChampionTag = styled.p`
-  font-size: 12px;
+  font-size: 10px;
   background-color: grey;
-  border-radius: 5px;
   color: white;
   margin: 0px 5px;
   padding: 2px;
