@@ -1,10 +1,12 @@
-## League of Legends - Data
+# League of Legends - Data
 
 Champions | Items | Summoners | Factions
 
 <img src="https://media4.giphy.com/media/CT5C6JTwIqAr1JDhA4/giphy.gif?cid=790b761129dde29ebe209467e53921157a79b0d822d1e7af&rid=giphy.gif&ct=g">
 
 Stack: React, Redux, Styled Components
+
+[Online Demo](https://league-of-legends-data.vercel.app/)
 
 # Getting Started with Create React App
 
