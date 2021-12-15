@@ -6,6 +6,8 @@ Champions | Items | Summoners | Factions
 
 Stack: React, Redux, Styled Components
 
+[Online Demo](https://league-of-legends-data.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
