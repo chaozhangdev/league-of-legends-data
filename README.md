@@ -1,4 +1,4 @@
-## League of Legends - Data
+# League of Legends - Data
 
 Champions | Items | Summoners | Factions
 
