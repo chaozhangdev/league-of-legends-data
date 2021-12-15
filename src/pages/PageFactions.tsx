@@ -34,6 +34,9 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 const FactionCard = styled.div`
@@ -48,6 +51,11 @@ const FactionCard = styled.div`
   }
   img {
     width: 100%;
-    /* height: 310px; */
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+    p {
+      margin: 10px;
+    }
   }
 `;

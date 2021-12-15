@@ -201,7 +201,7 @@ export default function PageChampions() {
 }
 
 const ChampionPool = styled.div`
-  background-color: black;
+  background-color: #181818;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -239,12 +239,14 @@ const Text = styled.p`
 `;
 
 const ChampionWrapper = styled.div`
-  /* margin: 30px 0px; */
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border: 1px solid black;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ChampionIntro = styled.div`
@@ -255,7 +257,10 @@ const ChampionIntro = styled.div`
   align-items: center;
   text-align: center;
   padding: 20px;
-  background-color: #243041;
+  background-color: #d18484;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Avatar = styled.img`
@@ -291,10 +296,13 @@ const Tags = styled.p`
 
 const ChampionData = styled.div`
   width: 70%;
-  background-color: #0c2b20;
+  background-color: #007175;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
